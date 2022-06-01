@@ -15,7 +15,7 @@ public class DFS_5 {
 		if(root == null) {//말단 노드
 			return;
 		}else {
-			System.out.print(root.data + " ");
+			System.out.print(root.data + " ");	
 			DFS(root.lt);
 			DFS(root.rt);
 		}
