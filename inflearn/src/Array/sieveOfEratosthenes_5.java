@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 만약 20이 입력되면 1부터 20까지의 소수는 2, 3, 5, 7, 11, 13, 17, 19로 총 8개입니다.
 
+1 2 3 4 5 6 7 
 
 입력
 첫 줄에 자연수의 개수 N(2<=N<=200,000)이 주어집니다.
@@ -26,10 +27,10 @@ public class sieveOfEratosthenes_5 {
 		int answer = 0;
 		int[] ch = new int[num+1];
 		for(int i=2;i<=num;i++) {
-			//System.out.println(" i >>> " + i );
+			System.out.println(" i >>> " + ch[i] );
 			if(ch[i] == 0) {
 				answer ++;
-				for(int j=i; j<=num;j=j+i) {
+				for(int j=i; j<=num;j=j+i) { 	//i값의 배수면 소수가 아니기 때문에 배열에 1로 변경해준다.
 					ch[j] = 1;
 				}
 			}
