@@ -1,7 +1,6 @@
 package DFS_BFS;
 
 public class subset_6 {
-
 	static int num;	//값
 	static int[] ch;//o,x체크
 	public void DFS(int L) {
@@ -14,16 +13,13 @@ public class subset_6 {
 			}
 			if(tmp.length() > 0) {
 				System.out.println(tmp);
-			}
-			
+			}	
 		}else {
 			ch[L] = 1;	//왼쪽은 1
 			DFS(L+1);		//왼쪽
 			ch[L] =0;	//오른쪽은 0
 			DFS(L+1);		//오른쪽
-		}
-		
-		
+		}	
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
