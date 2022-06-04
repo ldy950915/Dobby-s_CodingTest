@@ -11,6 +11,7 @@ class Node{
 public class DFS_5 {
 
 	Node root;//인스턴스 변수
+
 	public void DFS(Node root) {
 		if(root == null) {//말단 노드
 			return;
