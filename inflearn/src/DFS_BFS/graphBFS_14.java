@@ -9,12 +9,12 @@ public class graphBFS_14 {
 
 	static int n,m,answer = 0;
 	static ArrayList<ArrayList<Integer>> graph;
-	static int[] ch , dis ;	//방문체크
+	static int[] ch , dis ;	
 	
 	public void BFS(int v) {
-		Queue<Integer> Q= new LinkedList<Integer>();
-		ch[v] = 1;
-		dis[1] = 0;
+		Queue<Integer> Q= new LinkedList<Integer>();	//정점 담을 큐
+		ch[v] = 1; //방문여부체크
+		dis[1] = 0;	//간선 길이 체크
 		Q.offer(v); //정점 넣기
 		while(!Q.isEmpty()) {
 			int cv = Q.poll(); // 현재 정점
