@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Island_13 {
+public class IslandDFS_13 {
 	static int[] dx = {-1,-1,0,1,1,1,0,-1};	//За
 	static int[] dy = {0,1,1,1,0,-1,-1,-1};	//ї­
 	
@@ -35,7 +35,7 @@ public class Island_13 {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Island_13 I = new Island_13();
+		IslandDFS_13 I = new IslandDFS_13();
 		Scanner sc = new Scanner(System.in);
 		n = sc.nextInt();
 		int[][] board = new int[n][n];
