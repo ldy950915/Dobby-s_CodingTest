@@ -10,7 +10,6 @@ public class IslandDFS_13 {
 	
 	static int n,answer=0;
 	static int[][] dis;
-	static Queue<Point> Q = new LinkedList<Point>();
 	public void DFS(int x,int y, int[][] board){
 		for(int i=0;i<8;i++) {
 			int nx = x + dx[i];
